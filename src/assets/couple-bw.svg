@@ -1,0 +1,11 @@
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="300" fill="#222"/>
+  <ellipse cx="250" cy="250" rx="180" ry="40" fill="#fff" opacity="0.08"/>
+  <g>
+    <circle cx="210" cy="200" r="32" fill="#fff" opacity="0.7"/>
+    <rect x="190" y="220" width="40" height="60" rx="20" fill="#fff" opacity="0.7"/>
+    <circle cx="290" cy="200" r="32" fill="#fff" opacity="0.4"/>
+    <rect x="270" y="220" width="40" height="60" rx="20" fill="#fff" opacity="0.4"/>
+  </g>
+  <text x="50%" y="280" text-anchor="middle" font-size="36" fill="#fff" font-family="Montserrat, Arial, sans-serif" opacity="0.5">BW Couple</text>
+</svg> 
