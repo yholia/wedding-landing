@@ -23,16 +23,16 @@ const BgSvg = styled.div`
   }
 `;
 
-const Logo = styled.div`
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.3rem;
-  color: #fff;
-  opacity: 0.9;
-  z-index: 2;
-`;
+// const Logo = styled.div`
+//   position: absolute;
+//   top: 24px;
+//   left: 24px;
+//   font-family: 'Montserrat', sans-serif;
+//   font-size: 1.3rem;
+//   color: #fff;
+//   opacity: 0.9;
+//   z-index: 2;
+// `;
 
 const Names = styled.div`
   position: absolute;

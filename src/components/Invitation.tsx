@@ -28,19 +28,19 @@ const Flowers = styled.div`
     }
 `;
 
-const Heading = styled.div`
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: #2d2a2a;
-`;
-
-const Names = styled.div`
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.1rem;
-    margin-bottom: 1.1rem;
-    color: #2d2a2a;
-`;
+// const Heading = styled.div`
+//     font-family: 'Montserrat', sans-serif;
+//     font-size: 1.2rem;
+//     margin-bottom: 0.5rem;
+//     color: #2d2a2a;
+// `;
+//
+// const Names = styled.div`
+//     font-family: 'Dancing Script', cursive;
+//     font-size: 2.1rem;
+//     margin-bottom: 1.1rem;
+//     color: #2d2a2a;
+// `;
 
 const Text = styled.div`
     font-family: 'Montserrat', sans-serif;
