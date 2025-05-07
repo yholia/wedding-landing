@@ -181,7 +181,7 @@ Error generating stack: `+n.message+`
     font-family: 'Montserrat', sans-serif;
 `,hD=st.div`
     margin-top: 1.5rem;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Droid Sans', cursive;
     font-size: 1.3rem;
     z-index: 2;
     position: relative;
