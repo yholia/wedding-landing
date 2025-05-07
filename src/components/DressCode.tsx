@@ -41,10 +41,9 @@ const Swatch = styled.div<{ color: string }>`
 
 const DressCode: React.FC = () => (
   <Wrapper
-    initial={{ opacity: 0, y: 40 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.7 }}
-    viewport={{ once: true }}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{opacity: 1, y: 0}}
+      transition={{ duration: 2 }}
   >
     <Title>DRESS-CODE</Title>
     <Message>

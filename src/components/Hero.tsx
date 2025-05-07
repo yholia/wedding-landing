@@ -56,12 +56,12 @@ const Names = styled.div`
 
 const Hero: React.FC = () => (
   <Wrapper
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1 }}
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{opacity: 1, y: 0}}
+    transition={{ duration: 2 }}
   >
     <BgSvg>
-      <HeroImg />
+      <HeroImg/>
     </BgSvg>
     <Names>
       Євген<br />& Анастасія

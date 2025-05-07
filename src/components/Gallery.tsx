@@ -73,10 +73,9 @@ const Gallery: React.FC = () => {
 
     return (
         <Wrapper
-            initial={{opacity: 0, y: 40}}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{opacity: 1, y: 0}}
-            transition={{duration: 0.7}}
-            viewport={{once: true}}
+            transition={{ duration: 2 }}
         >
             <ImageBox>
                 <ArrowLeft onClick={prev} aria-label="Previous">&#8592;</ArrowLeft>
