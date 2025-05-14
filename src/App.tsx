@@ -7,6 +7,8 @@ import TelegramGroup from './components/TelegramGroup'
 import Gallery from './components/Gallery'
 import Hero from './components/Hero'
 import Invitation from './components/Invitation'
+import Photo from "./components/Photo.tsx";
+import sample_1 from './assets/sample_1.jpg';
 
 function App() {
     return (
@@ -14,6 +16,9 @@ function App() {
             {/* Hero Section */}
             <section className="hero-section">
                 <Hero/>
+            </section>
+            <section >
+                <Photo src={sample_1} alt={''}/>
             </section>
 
             {/* Invitation Section */}

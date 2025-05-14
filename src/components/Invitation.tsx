@@ -75,8 +75,15 @@ const Calendar = styled.table`
 `;
 
 const Heart = styled.span`
-    color: #d8c2b0;
-    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background-color: #d5918f;
+    color: #1b6c3e;
+    font-weight: 500;
 `;
 
 const BottomText = styled.div`
@@ -174,4 +181,4 @@ const Invitation: React.FC = () => (
     </Wrapper>
 );
 
-export default Invitation; 
+export default Invitation;

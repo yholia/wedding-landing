@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-const colors = ['#8A9A8D', '#BDAE9C', '#EAD8CF', '#E9DDC7'];
+const colors = ['#355743', '#F0F0EC', '#2a4c7d', '#a5b8d0'];
 
 const Wrapper = styled(motion.section)`
   background: #faf5f2;
