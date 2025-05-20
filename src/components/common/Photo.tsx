@@ -23,10 +23,6 @@ const ImageWrap = styled.img`
     margin: 0 auto;
     overflow: hidden;
     border-radius: 18px;
-
-    img {
-        display: block;
-    }
 `;
 
 export default Gallery;

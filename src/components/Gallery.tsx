@@ -15,18 +15,17 @@ const images = [
     Couple4Svg
 ];
 
-const Arrow = styled.button`
+const Arrow = styled.div`
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: rgba(255, 255, 255, 0.8);
-    opacity: 20%;
+    opacity: 10%;
     border: none;
     border-radius: 50%;
     width: 38px;
     height: 38px;
     font-size: 1.5rem;
-    cursor: pointer;
     z-index: 2;
     transition: background 0.2s;
 

@@ -16,7 +16,10 @@ function App() {
         <div className="wedding-app">
             <Hero/>
             <Invitation/>
-            <Wrapper>
+            <Wrapper
+                initial={{opacity: 0, y: 50}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{duration: 2}}>
                 <Photo src={sample_1} alt={''}/>
             </Wrapper>
             <Schedule/>
