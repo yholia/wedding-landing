@@ -1,16 +1,8 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import styled from 'styled-components';
+import Wrapper from './common/Wrapper';
 
 const colors = ['#355743', '#F0F0EC', '#2a4c7d', '#a5b8d0'];
-
-const Wrapper = styled(motion.section)`
-  background: #faf5f2;
-  border-radius: 20px;
-  padding: 2rem 1.5rem;
-  margin: 1.5rem 0;
-  text-align: center;
-`;
 
 const Title = styled.h2`
   font-family: 'Playfair Display', serif;

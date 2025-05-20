@@ -1,17 +1,7 @@
 import React from 'react';
-import {motion} from 'framer-motion';
 import styled from 'styled-components';
 import FlowersSvg from '../assets/flowers-top.svg?react';
-
-const Wrapper = styled(motion.section)`
-    background: #faf6f3;
-    border-radius: 32px;
-    padding: 2.2rem 1.2rem 2.5rem 1.2rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-`;
+import Wrapper from "./common/Wrapper.tsx";
 
 const Flowers = styled.div`
     position: absolute;
@@ -27,20 +17,6 @@ const Flowers = styled.div`
         display: block;
     }
 `;
-
-// const Heading = styled.div`
-//     font-family: 'Montserrat', sans-serif;
-//     font-size: 1.2rem;
-//     margin-bottom: 0.5rem;
-//     color: #2d2a2a;
-// `;
-//
-// const Names = styled.div`
-//     font-family: 'Dancing Script', cursive;
-//     font-size: 2.1rem;
-//     margin-bottom: 1.1rem;
-//     color: #2d2a2a;
-// `;
 
 const Text = styled.div`
     font-family: 'Montserrat', sans-serif;
@@ -82,7 +58,7 @@ const Heart = styled.span`
     height: 1.8rem;
     border-radius: 50%;
     background-color: #d5918f;
-    color: #1b6c3e;
+    color: #574e47;
     font-weight: 500;
 `;
 

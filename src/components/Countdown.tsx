@@ -1,20 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {motion} from 'framer-motion';
 import styled from 'styled-components';
-import  CoupleBwSvg from '../assets/couple-bw.svg?react';
+import CoupleBwSvg from '../assets/couple-bw.svg?react';
+import Wrapper from "./common/Wrapper.tsx";
 
 const eventDate = new Date('2025-08-18T00:00:00');
-
-const Wrapper = styled(motion.section)`
-    background: #222;
-    color: #fff;
-    border-radius: 20px;
-    padding: 2.2rem 1.5rem 1.5rem 1.5rem;
-    margin: 1.5rem 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-`;
 
 const BgSvg = styled.div`
     position: absolute;
@@ -91,6 +80,8 @@ const Countdown: React.FC = () => {
 
     return (
         <Wrapper
+            background={"#222"}
+            color={"#fff"}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{opacity: 1, y: 0}}
             transition={{ duration: 2 }}

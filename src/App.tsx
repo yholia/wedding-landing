@@ -7,54 +7,24 @@ import TelegramGroup from './components/TelegramGroup'
 import Gallery from './components/Gallery'
 import Hero from './components/Hero'
 import Invitation from './components/Invitation'
-import Photo from "./components/Photo.tsx";
-import sample_1 from './assets/sample_1.jpg';
+import Photo from "./components/common/Photo.tsx";
+import sample_1 from './assets/unnamed.png';
+import Wrapper from "./components/common/Wrapper.tsx";
 
 function App() {
     return (
         <div className="wedding-app">
-            {/* Hero Section */}
-            <section className="hero-section">
-                <Hero/>
-            </section>
-            <section >
+            <Hero/>
+            <Invitation/>
+            <Wrapper>
                 <Photo src={sample_1} alt={''}/>
-            </section>
-
-            {/* Invitation Section */}
-            <section className="invitation-section">
-                <Invitation/>
-            </section>
-
-            {/* Schedule Section */}
-            <section className="schedule-section">
-                <Schedule/>
-            </section>
-
-            {/* Locations Section */}
-            <section className="locations-section">
-                <Locations/>
-            </section>
-
-            {/* Dress Code Section */}
-            <section className="dresscode-section">
-                <DressCode/>
-            </section>
-
-            {/* Gallery Section */}
-            <section className="gallery-section">
-                <Gallery/>
-            </section>
-
-            {/* Countdown Section */}
-            <section className="countdown-section">
-                <Countdown/>
-            </section>
-
-            {/* Telegram Group Section */}
-            <section className="telegram-section">
-                <TelegramGroup/>
-            </section>
+            </Wrapper>
+            <Schedule/>
+            <Locations/>
+            <DressCode/>
+            <Gallery/>
+            <Countdown/>
+            <TelegramGroup/>
         </div>
     )
 }
