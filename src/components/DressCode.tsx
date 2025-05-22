@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Wrapper from './common/Wrapper';
 
-const colors = ['#355743', '#F0F0EC', '#2a4c7d', '#a5b8d0'];
+const colors = ['#355743', '#F0F0EC', '#bd9865', '#2a4c7d', '#a5b8d0'];
 
 const Title = styled.h2`
   font-family: 'Playfair Display', serif;
