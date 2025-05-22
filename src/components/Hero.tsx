@@ -11,16 +11,18 @@ const Names = styled.div`
     bottom: 32px;
     text-align: left;
     padding-left: 32px;
-    color: #323030;
-    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    text-shadow: #000000 5px 5px 2px;
+    font-family: "Fleur De Leah", cursive;
     font-size: 3rem;
     font-weight: 400;
+    font-style: normal;
     letter-spacing: 0.01em;
     z-index: 2;
     @media (max-width: 500px) {
-        font-size: 2.2rem;
-        padding-left: 18px;
-        bottom: 18px;
+        font-size: 3rem;
+        padding-left: 10%;
+        bottom: 10%;
     }
 `;
 
@@ -32,7 +34,7 @@ const Hero: React.FC = () => (
     >
         <Photo src={HeroImg} alt=""/>
         <Names>
-            Євген<br/>& Анастасія
+            Yevhen & Anastasiia
         </Names>
     </Wrapper>
 );

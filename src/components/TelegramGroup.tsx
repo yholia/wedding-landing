@@ -1,16 +1,8 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import CoupleSvg from '../assets/couple.svg?react';
+import Wrapper from './common/Wrapper';
 
-const Wrapper = styled(motion.section)`
-  background: #d8c2b0;
-  border-radius: 20px;
-  padding: 2rem 1.5rem;
-  margin: 1.5rem 0;
-  text-align: center;
-  color: #2d2a2a;
-`;
 
 const Photo = styled.div`
   width: 90px;
@@ -51,16 +43,17 @@ const Button = styled.a`
 
 const TelegramGroup: React.FC = () => (
   <Wrapper
+      background='#d8c2b0'
       initial={{ opacity: 0, y: 50 }}
       whileInView={{opacity: 1, y: 0}}
       transition={{ duration: 2 }}
   >
     <Photo><CoupleSvg /></Photo>
     <Message>
-      Для швидкого обміну інформацією, фото та відео між нашими гостями<br />ми створили групу в Telegram
+      Для швидкого обміну інформацією,<br/> фото та відео між нашими гостями<br/>ми створили групу в Telegram
     </Message>
     <Button href="https://t.me/yourgroup" target="_blank" rel="noopener noreferrer">
-      <span role="img" aria-label="telegram">✈️</span> Приєднатися
+      <span role="img" aria-label="telegram"></span> Приєднатися
     </Button>
   </Wrapper>
 );
