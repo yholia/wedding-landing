@@ -34,7 +34,7 @@ const Hero: React.FC = () => (
     >
         <Photo src={HeroImg} alt=""/>
         <Names>
-            Yevhen & Anastasiia
+            Yevhen<br/>& Anastasiia
         </Names>
     </Wrapper>
 );

@@ -52,7 +52,7 @@ const TelegramGroup: React.FC = () => (
     <Message>
       Для швидкого обміну інформацією,<br/> фото та відео між нашими гостями<br/>ми створили групу в Telegram
     </Message>
-    <Button href="https://t.me/yourgroup" target="_blank" rel="noopener noreferrer">
+    <Button href="https://t.me/+PqlnPmADUbMwYzM6" target="_blank" rel="noopener noreferrer">
       <span role="img" aria-label="telegram"></span> Приєднатися
     </Button>
   </Wrapper>
