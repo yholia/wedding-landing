@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/IMG_8702.jpg';
+import HeroImg from '../assets/main.jpg';
 import Photo from "./common/Photo.tsx";
 import Wrapper from "./common/Wrapper.tsx";
 
