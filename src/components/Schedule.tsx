@@ -3,13 +3,16 @@ import {motion} from 'framer-motion';
 import styled from 'styled-components';
 
 const schedule = [
-    {time: '14:30 ', event: 'Збір на локації'},
-    {time: '15:00 ', event: 'Церемонія'},
-    {time: '16:30 ', event: 'Майстер Клас'},
-    {time: '17:30 ', event: 'Перше застілля'},
-    {time: '18:00 ', event: 'Фуршет, перерва'},
-    {time: '19:00 ', event: 'Перша музична перерва'},
-    {time: '20:00 ', event: 'Друге застілля'},
+    {time: '14:00 ', event: 'Збір на локації'},
+    {time: '14:30 ', event: 'Церемонія'},
+    {time: '15:00 ', event: 'Майстер Клас'},
+    {time: '16:30 ', event: 'Перше застілля'},
+    {time: '17:30 ', event: 'Фуршет, перерва'},
+    {time: '18:00 ', event: 'Перша музична перерва'},
+    {time: '19:00 ', event: 'Друге застілля'},
+    {time: '20:00 ', event: 'Друга музична перерва'},
+    {time: '21:00 ', event: 'Розрізання весільного торта'},
+    {time: '21:10 ', event: 'Третя музична перерва'},
 ];
 
 const ScheduleWrapper = styled(motion.section)`
