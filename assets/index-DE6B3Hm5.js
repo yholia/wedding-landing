@@ -81,7 +81,7 @@ Error generating stack: `+n.message+`
     flex: 1;
     text-align: left;
     margin-left: 1.2rem;
-`,k2=()=>O.jsxs(q2,{initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},transition:{duration:2},children:[O.jsx(G2,{children:"Таймінг дня"}),O.jsx(X2,{children:Y2.map((i,a)=>O.jsxs(Q2,{children:[O.jsx(Z2,{children:i.time}),O.jsx(K2,{children:i.event})]},a))})]}),P2=[{title:"Замок Лева",place:" вул. Галицької Армії, 7-9, Львів",time:"Початок о 15:00",map:"https://maps.app.goo.gl/x9FLnRkR8SKjsCxa6"}],J2=st(Lf.section)`
+`,k2=()=>O.jsxs(q2,{initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},transition:{duration:2},children:[O.jsx(G2,{children:"Таймінг дня"}),O.jsx(X2,{children:Y2.map((i,a)=>O.jsxs(Q2,{children:[O.jsx(Z2,{children:i.time}),O.jsx(K2,{children:i.event})]},a))})]}),P2=[{title:"Замок Лева",place:" вул. Галицької Армії, 7-9, Львів",time:"Початок о 14:00",map:"https://maps.app.goo.gl/x9FLnRkR8SKjsCxa6"}],J2=st(Lf.section)`
   background: #d8c2b0;
   border-radius: 20px;
   padding: 2rem 1.5rem;
