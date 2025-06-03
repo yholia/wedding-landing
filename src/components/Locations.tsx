@@ -1,12 +1,12 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import {motion} from 'framer-motion';
 import styled from 'styled-components';
 
 const locations = [
   {
     title: 'Замок Лева',
     place: ' вул. Галицької Армії, 7-9, Львів',
-    time: 'Початок о 15:00',
+    time: 'Початок о 14:00',
     map: 'https://maps.app.goo.gl/x9FLnRkR8SKjsCxa6',
   },
 ];
