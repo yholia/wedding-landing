@@ -55,17 +55,6 @@ const TelegramGroup: React.FC = () => (
     <Button href="https://t.me/+PqlnPmADUbMwYzM6" target="_blank" rel="noopener noreferrer">
       <span role="img" aria-label="telegram"></span> Приєднатися
     </Button>
-    <Message>
-      Якщо ви планували подарувати<br/> нам квіти, просимо змінити їх<br/> пожертвою до притулку для тварин - {" "}<br/>
-      <a
-          href="https://www.instagram.com/domivka_shelter_reserve?igsh=M2VuZGJpcTJraHg2&utm_source=qr"
-          target="_blank"
-          rel="noopener noreferrer"
-      >
-        Domivka Shelter Reserve
-      </a><br/>
-      Ми хочемо щоб цей день<br/> приніс користь не тільки нам,<br/> а й тим хто справді потребує допомоги!<br/> 🐶🐱
-    </Message>
   </Wrapper>
 );
 

@@ -10,6 +10,7 @@ import Invitation from './components/Invitation'
 import Photo from "./components/common/Photo.tsx";
 import sample_1 from './assets/unnamed.png';
 import Wrapper from "./components/common/Wrapper.tsx";
+import Shelter from "./components/Shelter.tsx";
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
             <DressCode/>
             <Gallery/>
             <Countdown/>
+            <Shelter/>
             <TelegramGroup/>
         </div>
     )
