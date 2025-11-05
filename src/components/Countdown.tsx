@@ -50,12 +50,16 @@ const TimeLabel = styled.div`
     font-family: 'Montserrat', sans-serif;
 `;
 
-const Caption = styled.div`
+interface CaptionProps {
+    strikethrough?: boolean;
+}
+
+const Caption = styled.div<CaptionProps>`
     margin-top: 1.5rem;
-    //font-family: 'Droid Sans', cursive;
     font-size: 1.3rem;
     z-index: 2;
     position: relative;
+    text-decoration-line: ${props => props.strikethrough ? 'line-through' : 'none'};
 `;
 
 function getTimeLeft() {
@@ -108,7 +112,7 @@ const Countdown: React.FC = () => {
                     <TimeLabel>Секунд</TimeLabel>
                 </TimeBlock>
             </TimerRow>
-            <Caption style={{"text-decoration-line": "line-through"}}>...і ми будемо одружені!</Caption>
+            <Caption strikethrough>...і ми будемо одружені!</Caption>
             <Caption>ми одружені!</Caption>
         </Wrapper>
     );
