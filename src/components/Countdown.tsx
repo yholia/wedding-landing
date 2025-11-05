@@ -60,7 +60,7 @@ const Caption = styled.div`
 
 function getTimeLeft() {
     const now = new Date();
-    const diff = eventDate.getTime() - now.getTime();
+    const diff = now.getTime() - eventDate.getTime();
     const days = Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24)));
     const hours = Math.max(0, Math.floor((diff / (1000 * 60 * 60)) % 24));
     const minutes = Math.max(0, Math.floor((diff / (1000 * 60)) % 60));
@@ -108,7 +108,8 @@ const Countdown: React.FC = () => {
                     <TimeLabel>Секунд</TimeLabel>
                 </TimeBlock>
             </TimerRow>
-            <Caption>...і ми будемо одружені!</Caption>
+            <Caption style={{"text-decoration-line": "line-through"}}>...і ми будемо одружені!</Caption>
+            <Caption>ми одружені!</Caption>
         </Wrapper>
     );
 };
