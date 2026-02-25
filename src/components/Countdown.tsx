@@ -9,6 +9,7 @@ const BgSvg = styled.div`
     position: absolute;
     inset: 0;
     z-index: 0;
+    opacity: 0.06;
 
     svg {
         width: 100%;
@@ -17,37 +18,43 @@ const BgSvg = styled.div`
     }
 `;
 
-const Overlay = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(34, 34, 34, 0.55);
-    z-index: 1;
+const Content = styled.div`
+    position: relative;
+    z-index: 2;
+    padding: 0.4rem 0;
 `;
 
 const TimerRow = styled.div`
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    position: relative;
-    z-index: 2;
+    gap: 0.85rem;
 `;
 
 const TimeBlock = styled.div`
     text-align: center;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(42, 34, 24, 0.1);
+    border-radius: 14px;
+    padding: 0.85rem 0.65rem 0.65rem;
+    min-width: 62px;
 `;
 
 const TimeValue = styled.div`
-    font-size: 2.2rem;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-size: 2.4rem;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    color: #2A4435;
+    line-height: 1;
+    letter-spacing: 0.02em;
 `;
 
 const TimeLabel = styled.div`
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 0.68rem;
+    font-family: 'DM Sans', sans-serif;
+    color: #7A6E64;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 0.35rem;
 `;
 
 interface CaptionProps {
@@ -55,11 +62,14 @@ interface CaptionProps {
 }
 
 const Caption = styled.div<CaptionProps>`
-    margin-top: 1.5rem;
-    font-size: 1.3rem;
-    z-index: 2;
-    position: relative;
+    margin-top: 1.3rem;
+    font-size: 1.1rem;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 300;
+    color: ${props => props.strikethrough ? 'rgba(42,34,24,0.3)' : '#2A2218'};
     text-decoration-line: ${props => props.strikethrough ? 'line-through' : 'none'};
+    letter-spacing: 0.02em;
 `;
 
 function getTimeLeft() {
@@ -84,38 +94,36 @@ const Countdown: React.FC = () => {
 
     return (
         <Wrapper
-            background={"#222"}
-            color={"#fff"}
-            initial={{ opacity: 0, y: 50 }}
+            background={"#D6C5AE"}
+            initial={{opacity: 0, y: 30}}
             whileInView={{opacity: 1, y: 0}}
-            transition={{ duration: 2 }}
+            transition={{duration: 0.8}}
         >
-            <BgSvg>
-                <CoupleBwSvg/>
-            </BgSvg>
-            <Overlay/>
-            <TimerRow>
-                <TimeBlock>
-                    <TimeValue>{String(timeLeft.days).padStart(2, '0')}</TimeValue>
-                    <TimeLabel>Днів</TimeLabel>
-                </TimeBlock>
-                <TimeBlock>
-                    <TimeValue>{String(timeLeft.hours).padStart(2, '0')}</TimeValue>
-                    <TimeLabel>Годин</TimeLabel>
-                </TimeBlock>
-                <TimeBlock>
-                    <TimeValue>{String(timeLeft.minutes).padStart(2, '0')}</TimeValue>
-                    <TimeLabel>Хвилин</TimeLabel>
-                </TimeBlock>
-                <TimeBlock>
-                    <TimeValue>{String(timeLeft.seconds).padStart(2, '0')}</TimeValue>
-                    <TimeLabel>Секунд</TimeLabel>
-                </TimeBlock>
-            </TimerRow>
-            <Caption strikethrough>...і ми будемо одружені!</Caption>
-            <Caption>ми одружені!</Caption>
+            <BgSvg><CoupleBwSvg/></BgSvg>
+            <Content>
+                <TimerRow>
+                    <TimeBlock>
+                        <TimeValue>{String(timeLeft.days).padStart(2, '0')}</TimeValue>
+                        <TimeLabel>Днів</TimeLabel>
+                    </TimeBlock>
+                    <TimeBlock>
+                        <TimeValue>{String(timeLeft.hours).padStart(2, '0')}</TimeValue>
+                        <TimeLabel>Год</TimeLabel>
+                    </TimeBlock>
+                    <TimeBlock>
+                        <TimeValue>{String(timeLeft.minutes).padStart(2, '0')}</TimeValue>
+                        <TimeLabel>Хв</TimeLabel>
+                    </TimeBlock>
+                    <TimeBlock>
+                        <TimeValue>{String(timeLeft.seconds).padStart(2, '0')}</TimeValue>
+                        <TimeLabel>Сек</TimeLabel>
+                    </TimeBlock>
+                </TimerRow>
+                <Caption strikethrough>...і ми будемо одружені!</Caption>
+                <Caption>ми одружені!</Caption>
+            </Content>
         </Wrapper>
     );
 };
 
-export default Countdown; 
+export default Countdown;

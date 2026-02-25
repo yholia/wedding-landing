@@ -18,9 +18,10 @@ function App() {
             <Hero/>
             <Invitation/>
             <Wrapper
-                initial={{opacity: 0, y: 50}}
+                padding="0"
+                initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}
-                transition={{duration: 2}}>
+                transition={{duration: 0.8}}>
                 <Photo src={sample_1} alt={''}/>
             </Wrapper>
             <Schedule/>

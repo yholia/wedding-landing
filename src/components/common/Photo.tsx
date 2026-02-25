@@ -1,28 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImageBox from "./ImageBox.tsx";
 
-// Define proper types for image props
-interface GalleryImageProps {
-    src: string,
-    alt: string
+interface PhotoProps {
+    src: string;
+    alt: string;
 }
 
-const Gallery: React.FC<GalleryImageProps> = ({src, alt}) => {
-    return (
-        <ImageBox>
-            <ImageWrap src={src} alt={alt}/>
-        </ImageBox>
-    );
-};
-
-const ImageWrap = styled.img`
-    position: relative;
+const PhotoImg = styled.img`
     width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 18px;
+    display: block;
 `;
 
-export default Gallery;
+const Photo: React.FC<PhotoProps> = ({src, alt}) => (
+    <PhotoImg src={src} alt={alt}/>
+);
+
+export default Photo;

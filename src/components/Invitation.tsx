@@ -8,7 +8,7 @@ const Flowers = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    opacity: 0.18;
+    opacity: 0.07;
     pointer-events: none;
 
     svg {
@@ -19,32 +19,55 @@ const Flowers = styled.div`
 `;
 
 const Text = styled.div`
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.05rem;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-style: italic;
     margin-bottom: 1.2rem;
-    color: #2d2a2a;
+    color: #2A2218;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+`;
+
+const Divider = styled.div`
+    width: 48px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #C49852, transparent);
+    margin: 1rem auto;
 `;
 
 const CalendarBlock = styled.div`
-    margin: 1.2rem 0 1.5rem 0;
+    margin: 1.2rem 0 1.4rem 0;
 `;
 
 const Month = styled.div`
-    font-family: 'Montserrat', sans-serif;
-    color: #d8c2b0;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+    font-family: 'DM Sans', sans-serif;
+    color: #7A6E64;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 0.9rem;
 `;
 
 const Calendar = styled.table`
     width: 100%;
     border-collapse: collapse;
-    font-size: 1rem;
-    color: #2d2a2a;
+    font-size: 0.93rem;
+    color: #2A2218;
     margin: 0 auto;
+    font-family: 'DM Sans', sans-serif;
 
-    th, td {
-        padding: 0.2rem 0.5rem;
+    th {
+        padding: 0.2rem 0.3rem;
+        text-align: center;
+        font-weight: 500;
+        color: #7A6E64;
+        font-size: 0.78rem;
+        letter-spacing: 0.06em;
+    }
+
+    td {
+        padding: 0.28rem 0.3rem;
         text-align: center;
         font-weight: 400;
     }
@@ -54,31 +77,37 @@ const Heart = styled.span`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
-    background-color: #d5918f;
-    color: #574e47;
+    background: #2A4435;
+    color: #FAF6F0;
     font-weight: 500;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1rem;
 `;
 
 const BottomText = styled.div`
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.05rem;
-    margin-top: 1.5rem;
-    color: #2d2a2a;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 1.4rem;
+    color: #2A2218;
+    line-height: 1.75;
 `;
 
 const Invitation: React.FC = () => (
     <Wrapper
-        initial={{ opacity: 0, y: 50 }}
+        initial={{opacity: 0, y: 30}}
         whileInView={{opacity: 1, y: 0}}
-        transition={{ duration: 2 }}
+        transition={{duration: 0.8}}
     >
         <Flowers><FlowersSvg/></Flowers>
         <Text>
             Щиро запрошуємо вас на свято,<br/>присвячене створенню нашої сім'ї,<br/>яке відбудеться:
         </Text>
+        <Divider/>
         <CalendarBlock>
             <Month>Серпень 2025</Month>
             <Calendar>
@@ -139,18 +168,10 @@ const Invitation: React.FC = () => (
                     <td>30</td>
                     <td>31</td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
                 </tbody>
             </Calendar>
         </CalendarBlock>
+        <Divider/>
         <BottomText>
             І ми не уявляємо<br/>цей радісний день без вас —<br/>близьких і дорогих нам людей.
         </BottomText>
